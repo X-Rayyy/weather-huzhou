@@ -15,15 +15,9 @@ body {
   color: #fff;
   padding: 16px;
 }
-
-/* 密码验证 */
 #auth-screen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 20px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-height: 100vh; padding: 20px;
 }
 #auth-screen .lock-icon { font-size: 48px; margin-bottom: 16px; }
 #auth-screen h2 { font-size: 18px; margin-bottom: 20px; font-weight: 500; }
@@ -44,41 +38,27 @@ body {
 #auth-screen button:active { background: rgba(255,255,255,0.3); }
 #auth-screen .error { color: #ff6b6b; font-size: 13px; margin-top: 12px; min-height: 20px; }
 #app { display: none; }
-
-/* 头部 */
 .header { text-align: center; padding: 12px 0 20px; }
 .header h1 { font-size: 22px; font-weight: 600; }
 .header .date { font-size: 13px; opacity: 0.7; margin-top: 4px; }
-
-/* 目标概览 */
 .goal-overview {
   background: linear-gradient(135deg, #e94560 0%, #ff6b6b 100%);
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 16px;
-  text-align: center;
+  border-radius: 16px; padding: 20px; margin-bottom: 16px; text-align: center;
 }
 .goal-overview .big-number { font-size: 42px; font-weight: 700; }
 .goal-overview .big-number span { font-size: 18px; font-weight: 400; }
 .goal-overview .label { font-size: 13px; opacity: 0.9; margin-top: 4px; }
 .goal-overview .sub { font-size: 12px; opacity: 0.75; margin-top: 8px; }
-
-/* 进度环 */
 .progress-section {
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 16px;
+  background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);
+  border-radius: 16px; padding: 20px; margin-bottom: 16px;
   border: 1px solid rgba(255,255,255,0.1);
 }
 .progress-section h3 { font-size: 15px; margin-bottom: 16px; font-weight: 600; }
 .progress-items { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .progress-item {
-  background: rgba(255,255,255,0.06);
-  border-radius: 12px;
-  padding: 14px;
-  text-align: center;
+  background: rgba(255,255,255,0.06); border-radius: 12px;
+  padding: 14px; text-align: center;
 }
 .progress-item .value { font-size: 24px; font-weight: 600; color: #4facfe; }
 .progress-item .value.good { color: #00d2a0; }
@@ -87,36 +67,23 @@ body {
 .progress-item .change { font-size: 11px; margin-top: 2px; }
 .progress-item .change.down { color: #00d2a0; }
 .progress-item .change.up { color: #ff6b6b; }
-
-/* 体重趋势图 */
 .chart-section {
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 16px;
+  background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);
+  border-radius: 16px; padding: 20px; margin-bottom: 16px;
   border: 1px solid rgba(255,255,255,0.1);
 }
 .chart-section h3 { font-size: 15px; margin-bottom: 16px; font-weight: 600; }
 .chart-container { position: relative; height: 180px; }
 canvas { width: 100% !important; height: 100% !important; }
-
-/* 身体数据对比 */
 .compare-section {
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 16px;
+  background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);
+  border-radius: 16px; padding: 20px; margin-bottom: 16px;
   border: 1px solid rgba(255,255,255,0.1);
 }
 .compare-section h3 { font-size: 15px; margin-bottom: 16px; font-weight: 600; }
 .compare-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 .compare-row:last-child { border-bottom: none; }
 .compare-row .name { font-size: 13px; opacity: 0.8; }
@@ -127,44 +94,37 @@ canvas { width: 100% !important; height: 100% !important; }
 .compare-row .val.diff { font-size: 11px; }
 .compare-row .val.diff.down { color: #00d2a0; }
 .compare-row .val.diff.up { color: #ff6b6b; }
-
-/* 训练计划 */
 .plan-section {
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 16px;
+  background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);
+  border-radius: 16px; padding: 20px; margin-bottom: 16px;
   border: 1px solid rgba(255,255,255,0.1);
 }
 .plan-section h3 { font-size: 15px; margin-bottom: 16px; font-weight: 600; }
 .plan-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
 .plan-day {
-  background: rgba(255,255,255,0.06);
-  border-radius: 10px;
-  padding: 12px 8px;
-  text-align: center;
+  background: rgba(255,255,255,0.06); border-radius: 10px;
+  padding: 12px 8px; text-align: center;
+  transition: all 0.3s;
 }
 .plan-day .day-name { font-size: 12px; opacity: 0.6; margin-bottom: 6px; }
 .plan-day .day-type { font-size: 13px; font-weight: 500; }
 .plan-day.rest { opacity: 0.4; }
 .plan-day.cardio { color: #ff6b6b; }
 .plan-day.strength { color: #4facfe; }
-
-/* 训练记录 */
+.plan-day.today {
+  background: rgba(79,172,254,0.2);
+  border: 1px solid rgba(79,172,254,0.5);
+  box-shadow: 0 0 12px rgba(79,172,254,0.3);
+}
+.plan-day.today .day-name { opacity: 1; font-weight: 600; }
 .log-section {
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 16px;
+  background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);
+  border-radius: 16px; padding: 20px; margin-bottom: 16px;
   border: 1px solid rgba(255,255,255,0.1);
 }
 .log-section h3 { font-size: 15px; margin-bottom: 16px; font-weight: 600; }
 .log-item {
-  display: flex;
-  gap: 12px;
-  padding: 12px 0;
+  display: flex; gap: 12px; padding: 12px 0;
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 .log-item:last-child { border-bottom: none; }
@@ -172,42 +132,25 @@ canvas { width: 100% !important; height: 100% !important; }
 .log-content { flex: 1; }
 .log-title { font-size: 14px; font-weight: 500; }
 .log-detail { font-size: 12px; opacity: 0.6; margin-top: 4px; }
-
-/* 饮食提醒 */
 .diet-section {
   background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 16px;
-  border: 1px solid rgba(79, 172, 254, 0.2);
+  border-radius: 16px; padding: 20px; margin-bottom: 16px;
+  border: 1px solid rgba(79,172,254,0.2);
 }
 .diet-section h3 { font-size: 15px; margin-bottom: 12px; font-weight: 600; }
 .diet-tips { display: flex; flex-direction: column; gap: 8px; }
-.diet-tip {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  opacity: 0.8;
-}
+.diet-tip { display: flex; align-items: center; gap: 8px; font-size: 13px; opacity: 0.8; }
 .diet-tip .icon { font-size: 16px; }
-
 .refresh-btn {
-  display: block;
-  margin: 20px auto 0;
-  background: rgba(255,255,255,0.15);
-  border: 1px solid rgba(255,255,255,0.2);
-  color: #fff;
-  padding: 10px 32px;
-  border-radius: 24px;
-  font-size: 14px;
-  cursor: pointer;
+  display: block; margin: 20px auto 0;
+  background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2);
+  color: #fff; padding: 10px 32px; border-radius: 24px;
+  font-size: 14px; cursor: pointer;
 }
 </style>
 </head>
 <body>
 
-<!-- 密码验证 -->
 <div id="auth-screen">
   <div class="lock-icon">🔒</div>
   <h2>请输入密码</h2>
@@ -218,165 +161,82 @@ canvas { width: 100% !important; height: 100% !important; }
   <div class="error" id="pwd-error"></div>
 </div>
 
-<!-- 主内容 -->
 <div id="app">
   <div class="header">
     <h1>💪 健身减脂计划</h1>
     <div class="date" id="dateStr"></div>
   </div>
 
-  <!-- 目标概览 -->
   <div class="goal-overview">
-    <div class="big-number" id="weight-display">72.40<span>kg</span></div>
+    <div class="big-number">72.40<span>kg</span></div>
     <div class="label">当前体重</div>
     <div class="sub">目标 65.80 kg · 还需减 <span id="remain">6.60</span> kg</div>
   </div>
 
-  <!-- 进度数据 -->
   <div class="progress-section">
     <h3>📊 关键指标</h3>
     <div class="progress-items">
       <div class="progress-item">
-        <div class="value good" id="bodyfat-val">23.9%</div>
+        <div class="value good">23.9%</div>
         <div class="label">体脂率</div>
-        <div class="change down" id="bodyfat-change">↓ 0.1%</div>
+        <div class="change down">↓ 0.1%</div>
       </div>
       <div class="progress-item">
-        <div class="value" id="muscle-val">29.04kg</div>
+        <div class="value">29.04kg</div>
         <div class="label">肌肉量</div>
-        <div class="change" id="muscle-change">→ 持平</div>
+        <div class="change">→ 持平</div>
       </div>
       <div class="progress-item">
-        <div class="value warn" id="bmi-val">23.9</div>
+        <div class="value warn">23.9</div>
         <div class="label">BMI</div>
-        <div class="change down" id="bmi-change">↓ 0.1</div>
+        <div class="change down">↓ 0.1</div>
       </div>
       <div class="progress-item">
-        <div class="value" id="visceral-val">9.0</div>
+        <div class="value">9.0</div>
         <div class="label">内脏脂肪</div>
-        <div class="change" id="visceral-change">→ 不变</div>
+        <div class="change">→ 不变</div>
       </div>
     </div>
   </div>
 
-  <!-- 体重趋势图 -->
   <div class="chart-section">
     <h3>📈 体重趋势</h3>
-    <div class="chart-container">
-      <canvas id="weightChart"></canvas>
-    </div>
+    <div class="chart-container"><canvas id="weightChart"></canvas></div>
   </div>
 
-  <!-- 身体数据对比 -->
   <div class="compare-section">
     <h3>📋 身体数据对比</h3>
-    <div class="compare-row">
-      <span class="name">体重</span>
-      <div class="vals">
-        <span class="val start">72.60 kg</span>
-        <span class="val current">72.40 kg</span>
-        <span class="val diff down">-0.20</span>
-      </div>
-    </div>
-    <div class="compare-row">
-      <span class="name">体脂率</span>
-      <div class="vals">
-        <span class="val start">24.0%</span>
-        <span class="val current">23.9%</span>
-        <span class="val diff down">-0.1%</span>
-      </div>
-    </div>
-    <div class="compare-row">
-      <span class="name">去脂体重</span>
-      <div class="vals">
-        <span class="val start">57.04 kg</span>
-        <span class="val current">56.99 kg</span>
-        <span class="val diff down">-0.05</span>
-      </div>
-    </div>
-    <div class="compare-row">
-      <span class="name">肌肉量</span>
-      <div class="vals">
-        <span class="val start">29.04 kg</span>
-        <span class="val current">29.04 kg</span>
-        <span class="val diff">0</span>
-      </div>
-    </div>
-    <div class="compare-row">
-      <span class="name">骨量</span>
-      <div class="vals">
-        <span class="val start">3.15 kg</span>
-        <span class="val current">2.90 kg</span>
-        <span class="val diff down">-0.25</span>
-      </div>
-    </div>
-    <div class="compare-row">
-      <span class="name">内脏脂肪</span>
-      <div class="vals">
-        <span class="val start">9.0</span>
-        <span class="val current">9.0</span>
-        <span class="val diff">0</span>
-      </div>
-    </div>
-    <div class="compare-row">
-      <span class="name">水分率</span>
-      <div class="vals">
-        <span class="val start">54.4%</span>
-        <span class="val current">54.4%</span>
-        <span class="val diff">0</span>
-      </div>
-    </div>
-    <div class="compare-row">
-      <span class="name">BMI</span>
-      <div class="vals">
-        <span class="val start">24.0</span>
-        <span class="val current">23.9</span>
-        <span class="val diff down">-0.1</span>
-      </div>
-    </div>
+    <div class="compare-row"><span class="name">体重</span><div class="vals"><span class="val start">72.60 kg</span><span class="val current">72.40 kg</span><span class="val diff down">-0.20</span></div></div>
+    <div class="compare-row"><span class="name">体脂率</span><div class="vals"><span class="val start">24.0%</span><span class="val current">23.9%</span><span class="val diff down">-0.1%</span></div></div>
+    <div class="compare-row"><span class="name">去脂体重</span><div class="vals"><span class="val start">57.04 kg</span><span class="val current">56.99 kg</span><span class="val diff down">-0.05</span></div></div>
+    <div class="compare-row"><span class="name">肌肉量</span><div class="vals"><span class="val start">29.04 kg</span><span class="val current">29.04 kg</span><span class="val diff">0</span></div></div>
+    <div class="compare-row"><span class="name">骨量</span><div class="vals"><span class="val start">3.15 kg</span><span class="val current">2.90 kg</span><span class="val diff down">-0.25</span></div></div>
+    <div class="compare-row"><span class="name">内脏脂肪</span><div class="vals"><span class="val start">9.0</span><span class="val current">9.0</span><span class="val diff">0</span></div></div>
+    <div class="compare-row"><span class="name">水分率</span><div class="vals"><span class="val start">54.4%</span><span class="val current">54.4%</span><span class="val diff">0</span></div></div>
+    <div class="compare-row"><span class="name">BMI</span><div class="vals"><span class="val start">24.0</span><span class="val current">23.9</span><span class="val diff down">-0.1</span></div></div>
   </div>
 
-  <!-- 训练计划 -->
   <div class="plan-section">
     <h3>🏋️ 本周训练计划</h3>
-    <div class="plan-grid">
-      <div class="plan-day strength"><div class="day-name">周一</div><div class="day-type">💪 力量</div></div>
-      <div class="plan-day cardio"><div class="day-name">周二</div><div class="day-type">🏃 有氧</div></div>
-      <div class="plan-day strength"><div class="day-name">周三</div><div class="day-type">💪 力量</div></div>
-      <div class="plan-day rest"><div class="day-name">周四</div><div class="day-type">😴 休息</div></div>
-      <div class="plan-day strength"><div class="day-name">周五</div><div class="day-type">💪 力量</div></div>
-      <div class="plan-day cardio"><div class="day-name">周六</div><div class="day-type">🏃 有氧</div></div>
-      <div class="plan-day rest"><div class="day-name">周日</div><div class="day-type">😴 休息</div></div>
-    </div>
+    <div class="plan-grid" id="planGrid"></div>
   </div>
 
-  <!-- 训练记录 -->
   <div class="log-section">
     <h3>📝 训练记录</h3>
     <div class="log-item">
       <div class="log-date">6/10</div>
-      <div class="log-content">
-        <div class="log-title">🏃 爬楼机</div>
-        <div class="log-detail">56分钟 · 心率128bpm · 燃脂区78% · 有氧2.5</div>
-      </div>
+      <div class="log-content"><div class="log-title">🏃 爬楼机</div><div class="log-detail">56分钟 · 心率128bpm · 燃脂区78% · 有氧2.5</div></div>
     </div>
     <div class="log-item">
       <div class="log-date">6/9</div>
-      <div class="log-content">
-        <div class="log-title">🏃 爬楼机</div>
-        <div class="log-detail">65分钟 · 心率130bpm · 燃脂区54% · 训练效果良好</div>
-      </div>
+      <div class="log-content"><div class="log-title">🏃 爬楼机</div><div class="log-detail">65分钟 · 心率130bpm · 燃脂区54% · 训练效果良好</div></div>
     </div>
     <div class="log-item">
       <div class="log-date">6/3</div>
-      <div class="log-content">
-        <div class="log-title">🏃 跑步</div>
-        <div class="log-detail">12'09" · 配速12'09"/km · 心率125bpm · 消耗603卡</div>
-      </div>
+      <div class="log-content"><div class="log-title">🏃 跑步</div><div class="log-detail">12'09" · 配速12'09"/km · 心率125bpm · 消耗603卡</div></div>
     </div>
   </div>
 
-  <!-- 饮食提醒 -->
   <div class="diet-section">
     <h3>🥗 减脂饮食要点</h3>
     <div class="diet-tips">
@@ -392,8 +252,7 @@ canvas { width: 100% !important; height: 100% !important; }
 </div>
 
 <script>
-// 密码验证
-const SECRET = 'huzhou2026';
+var SECRET = 'huzhou2026';
 function checkPwd() {
   var val = document.getElementById('pwd-input').value;
   if (val === SECRET) {
@@ -410,46 +269,47 @@ document.getElementById('pwd-input').addEventListener('keydown', function(e) {
   if (e.key === 'Enter') checkPwd();
 });
 
-// 数据
-var data = {
-  start: { weight: 72.60, bodyfat: 24.0, leanMass: 57.04, muscle: 29.04, bone: 3.15, visceral: 9.0, water: 54.4, bmi: 24.0 },
-  current: { weight: 72.40, bodyfat: 23.9, leanMass: 56.99, muscle: 29.04, bone: 2.90, visceral: 9.0, water: 54.4, bmi: 23.9 },
-  targetWeight: 65.80,
-  weightHistory: [
-    { date: '6/3', weight: 72.60 },
-    { date: '6/6', weight: 72.60 },
-    { date: '6/9', weight: 72.40 },
-    { date: '6/10', weight: 72.40 }
-  ]
-};
+var weightHistory = [
+  { date: '6/3', weight: 72.60 },
+  { date: '6/6', weight: 72.60 },
+  { date: '6/9', weight: 72.40 },
+  { date: '6/10', weight: 72.40 }
+];
+var targetWeight = 65.80;
+
+var weekDays = [
+  { name: '周一', type: 'strength', icon: '💪 力量' },
+  { name: '周二', type: 'cardio', icon: '🏃 有氧' },
+  { name: '周三', type: 'strength', icon: '💪 力量' },
+  { name: '周四', type: 'rest', icon: '😴 休息' },
+  { name: '周五', type: 'strength', icon: '💪 力量' },
+  { name: '周六', type: 'cardio', icon: '🏃 有氧' },
+  { name: '周日', type: 'rest', icon: '😴 休息' }
+];
 
 function initApp() {
   var now = new Date();
+  var dayIdx = now.getDay(); // 0=周日
+  dayIdx = dayIdx === 0 ? 6 : dayIdx - 1; // 转成 0=周一
+
   document.getElementById('dateStr').textContent =
     now.getFullYear() + '年' + (now.getMonth()+1) + '月' + now.getDate() + '日 星期' + '日一二三四五六'[now.getDay()];
 
-  // 目标概览
-  var remain = (data.current.weight - data.targetWeight).toFixed(2);
-  document.getElementById('remain').textContent = remain;
+  document.getElementById('remain').textContent = (72.40 - targetWeight).toFixed(2);
 
-  // 关键指标
-  var bfDiff = (data.current.bodyfat - data.start.bodyfat).toFixed(1);
-  document.getElementById('bodyfat-change').textContent = (bfDiff <= 0 ? '↓ ' : '↑ ') + Math.abs(bfDiff) + '%';
-  document.getElementById('bodyfat-change').className = 'change ' + (bfDiff <= 0 ? 'down' : 'up');
+  // 动态生成训练计划
+  var grid = document.getElementById('planGrid');
+  grid.innerHTML = '';
+  for (var i = 0; i < weekDays.length; i++) {
+    var d = weekDays[i];
+    var cls = 'plan-day ' + d.type;
+    if (i === dayIdx) cls += ' today';
+    var div = document.createElement('div');
+    div.className = cls;
+    div.innerHTML = '<div class="day-name">' + d.name + '</div><div class="day-type">' + d.icon + '</div>';
+    grid.appendChild(div);
+  }
 
-  var muscleDiff = (data.current.muscle - data.start.muscle).toFixed(2);
-  document.getElementById('muscle-change').textContent = (muscleDiff > 0 ? '↑ ' : muscleDiff < 0 ? '↓ ' : '→ ') + Math.abs(muscleDiff) + 'kg';
-  document.getElementById('muscle-change').className = 'change ' + (muscleDiff > 0 ? 'up' : muscleDiff < 0 ? 'down' : '');
-
-  var bmiDiff = (data.current.bmi - data.start.bmi).toFixed(1);
-  document.getElementById('bmi-change').textContent = (bmiDiff <= 0 ? '↓ ' : '↑ ') + Math.abs(bmiDiff);
-  document.getElementById('bmi-change').className = 'change ' + (bmiDiff <= 0 ? 'down' : 'up');
-
-  var visDiff = (data.current.visceral - data.start.visceral).toFixed(1);
-  document.getElementById('visceral-change').textContent = (visDiff > 0 ? '↑ ' : visDiff < 0 ? '↓ ' : '→ ') + Math.abs(visDiff);
-  document.getElementById('visceral-change').className = 'change ' + (visDiff > 0 ? 'up' : visDiff < 0 ? 'down' : '');
-
-  // 绘制体重趋势图
   drawChart();
 }
 
@@ -461,33 +321,27 @@ function drawChart() {
   canvas.width = rect.width * dpr;
   canvas.height = rect.height * dpr;
   ctx.scale(dpr, dpr);
-  var W = rect.width;
-  var H = rect.height;
+  var W = rect.width, H = rect.height;
 
-  var pts = data.weightHistory;
-  var minW = Math.min(...pts.map(function(p){ return p.weight; })) - 0.5;
-  var maxW = Math.max(...pts.map(function(p){ return p.weight; })) + 0.5;
-  var range = maxW - minW || 1;
+  var pts = weightHistory;
+  var minW = 71.5, maxW = 73.0;
+  var range = maxW - minW;
 
   var padL = 40, padR = 16, padT = 16, padB = 30;
-  var chartW = W - padL - padR;
-  var chartH = H - padT - padB;
+  var chartW = W - padL - padR, chartH = H - padT - padB;
 
-  // 背景网格
   ctx.strokeStyle = 'rgba(255,255,255,0.06)';
   ctx.lineWidth = 1;
   for (var i = 0; i <= 4; i++) {
     var y = padT + (chartH / 4) * i;
     ctx.beginPath(); ctx.moveTo(padL, y); ctx.lineTo(W - padR, y); ctx.stroke();
-    var wVal = maxW - (range / 4) * i;
     ctx.fillStyle = 'rgba(255,255,255,0.4)';
     ctx.font = '11px -apple-system';
     ctx.textAlign = 'right';
-    ctx.fillText(wVal.toFixed(1), padL - 6, y + 4);
+    ctx.fillText((maxW - range / 4 * i).toFixed(1), padL - 6, y + 4);
   }
 
-  // 目标线
-  var targetY = padT + chartH * (maxW - data.targetWeight) / range;
+  var targetY = padT + chartH * (maxW - targetWeight) / range;
   ctx.strokeStyle = 'rgba(0,210,160,0.4)';
   ctx.lineWidth = 1;
   ctx.setLineDash([4, 4]);
@@ -496,9 +350,8 @@ function drawChart() {
   ctx.fillStyle = 'rgba(0,210,160,0.6)';
   ctx.font = '10px -apple-system';
   ctx.textAlign = 'left';
-  ctx.fillText('目标 ' + data.targetWeight + 'kg', padL + 4, targetY - 4);
+  ctx.fillText('目标 ' + targetWeight + 'kg', padL + 4, targetY - 4);
 
-  // 折线
   var xStep = chartW / (pts.length - 1);
   ctx.beginPath();
   ctx.strokeStyle = '#4facfe';
@@ -511,9 +364,7 @@ function drawChart() {
   }
   ctx.stroke();
 
-  // 渐变填充
   var lastX = padL + xStep * (pts.length - 1);
-  var lastY = padT + chartH * (maxW - pts[pts.length-1].weight) / range;
   ctx.lineTo(lastX, padT + chartH);
   ctx.lineTo(padL, padT + chartH);
   ctx.closePath();
@@ -523,20 +374,13 @@ function drawChart() {
   ctx.fillStyle = grad;
   ctx.fill();
 
-  // 数据点
   for (var i = 0; i < pts.length; i++) {
     var x = padL + xStep * i;
     var y = padT + chartH * (maxW - pts[i].weight) / range;
-    ctx.beginPath();
-    ctx.arc(x, y, 4, 0, Math.PI * 2);
-    ctx.fillStyle = '#4facfe';
-    ctx.fill();
-    ctx.beginPath();
-    ctx.arc(x, y, 2, 0, Math.PI * 2);
-    ctx.fillStyle = '#fff';
-    ctx.fill();
-
-    // 日期标签
+    ctx.beginPath(); ctx.arc(x, y, 4, 0, Math.PI * 2);
+    ctx.fillStyle = '#4facfe'; ctx.fill();
+    ctx.beginPath(); ctx.arc(x, y, 2, 0, Math.PI * 2);
+    ctx.fillStyle = '#fff'; ctx.fill();
     ctx.fillStyle = 'rgba(255,255,255,0.4)';
     ctx.font = '10px -apple-system';
     ctx.textAlign = 'center';
