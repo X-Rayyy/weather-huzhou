@@ -221,8 +221,18 @@ canvas { width: 100% !important; height: 100% !important; }
     <div class="plan-grid" id="planGrid"></div>
   </div>
 
+  <div class="rest-day-banner" id="restBanner" style="display:none; background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%); border: 1px solid rgba(0,210,160,0.3); border-radius: 16px; padding: 16px 20px; margin-bottom: 16px; text-align: center;">
+    <div style="font-size: 28px; margin-bottom: 6px;">😴</div>
+    <div style="font-size: 15px; font-weight: 600; color: #00d2a0;">今天是休息日</div>
+    <div style="font-size: 12px; opacity: 0.6; margin-top: 4px;">好好休息，明天继续练 💪</div>
+  </div>
+
   <div class="log-section">
     <h3>📝 训练记录</h3>
+    <div class="log-item">
+      <div class="log-date">6/12</div>
+      <div class="log-content"><div class="log-title">😴 休息日</div><div class="log-detail">大哥要求休息，不训练</div></div>
+    </div>
     <div class="log-item">
       <div class="log-date">6/10</div>
       <div class="log-content"><div class="log-title">🏃 爬楼机</div><div class="log-detail">56分钟 · 心率128bpm · 燃脂区78% · 有氧2.5</div></div>
@@ -282,7 +292,8 @@ var weekDays = [
   { name: '周二', type: 'cardio', icon: '🏃 有氧' },
   { name: '周三', type: 'strength', icon: '💪 力量' },
   { name: '周四', type: 'rest', icon: '😴 休息' },
-  { name: '周五', type: 'strength', icon: '💪 力量' },
+  { name: '周五', type: 'rest', icon: '😴 休息' },
+  var todayIsRest = false;
   { name: '周六', type: 'cardio', icon: '🏃 有氧' },
   { name: '周日', type: 'rest', icon: '😴 休息' }
 ];
@@ -296,6 +307,12 @@ function initApp() {
     now.getFullYear() + '年' + (now.getMonth()+1) + '月' + now.getDate() + '日 星期' + '日一二三四五六'[now.getDay()];
 
   document.getElementById('remain').textContent = (72.40 - targetWeight).toFixed(2);
+
+  // 判断今天是否是休息日
+  todayIsRest = (weekDays[dayIdx].type === 'rest');
+  if (todayIsRest) {
+    document.getElementById('restBanner').style.display = 'block';
+  }
 
   // 动态生成训练计划
   var grid = document.getElementById('planGrid');
